@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" id="w">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="1.css">
+  <title></title>
+</head>
+<body>
+  <P id="p"></P>
+  <button onclick="moshe()">Start up page</button>
+  <button id="comment" onclick="comment()">Comment</button>
+   <button onclick="two()">Math question</button>
+   <p id="name"></p>
+   <p id="commented"></p>
+  <script>
+    let one = "";
+    function moshe() {
+    let one = prompt("");
+    if (one == "") {
+      alert("ANSWER SOMETHING!")
+      moshe()
+    }
+    else if (one == null) {
+      alert("HEY DON'T PRESS THAT!")
+      moshe()
+    }
+    else {
+      alert("Hello " + one + "!")
+      document.getElementById("p").innerHTML  = `Hello ${one}`
+      let allow = "x";
+    }
+    }
+      function two() {
+       prompt("2+4")
+        if (prompt = "6")
+        alert("Good job")
+        else {
+          alert("g")
+        }
+      }
+      function comment() {
+        let thing = prompt("What do you want to comment?")
+        let commentname = prompt("What do you want the name that comment as to be?")
+        if( thing != "" || thing != null) {
+          document.getElementById("name").innerHTML = commentname;
+          document.getElementById("commented").innerHTML = thing;
+        }
+      }
+  </script>
+</body>
+</html>
